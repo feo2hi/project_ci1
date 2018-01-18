@@ -1,6 +1,7 @@
 pipeline {
     agent any
     options { timestamps() }
+    properties([pipelineTriggers([upstream('aws-pipeline-ci3')])])
     stages {
         stage('Non-parallel stage') {
             steps {
