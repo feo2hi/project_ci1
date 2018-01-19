@@ -4,3 +4,4 @@ A test repository for a continuous integration, accessed by a group of developer
 Changed by feo2hi, first time.
 
 Checked the Jankins file and make a PR from ENA side
+added ci3 build to Jenkins file
