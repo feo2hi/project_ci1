@@ -1,6 +1,9 @@
 pipeline {
     agent any
-    options { timestamps(),pipelineTriggers([upstream('aws-pipeline-ci3')]) }
+    options { 
+	timestamps()
+	pipelineTriggers([upstream('aws-pipeline-ci3')]) 
+    }
     //options([pipelineTriggers([upstream('aws-pipeline-ci3')])])
     stages {
         stage('Non-parallel stage') {
