@@ -1,7 +1,7 @@
 pipeline {
     agent any
     options { timestamps() }
-    properties([pipelineTriggers([upstream('aws-pipeline-ci3')])])
+    //options([pipelineTriggers([upstream('aws-pipeline-ci3')])])
     stages {
         stage('Non-parallel stage') {
             steps {
@@ -16,6 +16,11 @@ pipeline {
                 sh 'pwd ; ls -al'
             }
         }
+    }
+    post {
+       success {
+           echo 'start ci3, here'
+       }
     }
 }
 
