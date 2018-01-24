@@ -6,4 +6,5 @@ Checked Jenkins file.
 Checked the Jankins file and make a PR from ENA side
 added ci3 build to Jenkins file
 
-new comment
+
+Removed the new comment
